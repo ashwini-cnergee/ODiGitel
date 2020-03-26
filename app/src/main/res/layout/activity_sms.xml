@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_scrn_myapp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topbanner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/imgdvois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/myapp_logo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/myheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cfcfcf" >
+
+            <TextView
+                android:id="@+id/titleheader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="PASSWORD AUTHENTICATION"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/myheader"
+            android:padding="5dp" >
+
+            <EditText
+                android:id="@+id/etSmsPwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextView02"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/editextlayout"
+                android:ems="10"
+                android:hint="Enter your passsword"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="5dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:background="#ebebeb"
+                android:padding="5dp"
+                android:text="Password:"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etSmsPwd"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnRegenerate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_selector"
+                    android:text="Regenerate OTP"
+                    android:textColor="@color/label_white_color" />
+
+                <Button
+                    android:id="@+id/btnsubmit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_selector"
+                    android:text="Submit"
+                    android:textColor="@color/label_white_color" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_marginTop="20dp"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="NOTE:"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvTipsMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTips"
+                android:text="Please check SMS for the password"
+                android:textColor="#000000" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

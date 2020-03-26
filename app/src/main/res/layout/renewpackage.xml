@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_scrn_myapp"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/topbanner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="3dp" >
+        
+        <ImageView
+                android:id="@+id/ivMenuDrawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+     			android:layout_centerVertical="true"	
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="18dp"
+                android:paddingRight="60dp"
+                android:src="@drawable/myapp_drawer" />
+
+        <ImageView
+            android:id="@+id/imgdvois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+        	android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/myapp_logo" >
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scrolldata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/banner"
+        android:layout_below="@+id/topbanner"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/contentdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:id="@+id/myheader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                      <!--   <ImageView 
+                            android:id="@+id/img_headrhome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_headerhome"
+                            android:padding="2dp"
+                            android:layout_alignParentRight="true"
+                            />
+ -->
+                    
+
+                        <TextView
+                            android:id="@+id/titleheader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/img_headrhome"
+                            android:layout_alignParentLeft="true"
+                            android:text="RENEWAL" />
+                            <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/titleheader"
+                            android:background="#000000" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/upper_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+            
+            <RelativeLayout
+                android:id="@+id/pickuprequest"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+            android:padding="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/nav_bg">
+
+                <ImageView
+                    android:id="@+id/img_pickup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:src="@drawable/img_pickup" />
+
+                <TextView
+                    android:id="@+id/tv_pickup_req"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/img_pickup"
+                    android:text="PickUp Request"
+                    android:padding="2dp"
+                    android:textSize="10.5sp" />
+
+            </RelativeLayout>
+            
+            
+            <RelativeLayout
+                android:id="@+id/netbanking"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+               
+                android:background="@drawable/nav_bg">
+                
+                <ImageView
+                    android:id="@+id/img_netbanking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                 
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:src="@drawable/img_netbanking"/>
+                
+                <TextView
+                    android:id="@+id/tv_netbanking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_netbanking"
+                 android:layout_centerHorizontal="true"
+                    android:text="Net Banking"
+                    android:textSize="11sp"/>
+                </RelativeLayout>
+            
+            
+            <RelativeLayout
+                android:id="@+id/creditdebit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:background="@drawable/nav_bg"
+                >
+            <ImageView
+                android:id="@+id/img_creditdebit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="4dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_card"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit/Debit Card"
+                android:layout_centerHorizontal="true"
+                android:textSize="10.2sp"
+                android:layout_below="@+id/img_creditdebit"/>
+            </RelativeLayout>
+            
+                
+        </LinearLayout>
+        
+        </LinearLayout>
+        
+       <!--  
+         <LinearLayout
+            android:id="@+id/below_upper_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+              android:layout_above="@+id/banner"
+            android:layout_below="@+id/upper_main"
+            android:layout_centerHorizontal="true" >
+        
+        
+         <LinearLayout
+             android:id="@+id/down_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:weightSum="4"
+           -->
+          
+          <!--  copying ubove  -->
+          <LinearLayout
+            android:id="@+id/below_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center"
+             
+            android:layout_below="@+id/upper_main"
+            
+            android:layout_centerHorizontal="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            	        android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+            
+            <RelativeLayout
+              android:id="@+id/rlSpecialOffer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.64"
+                android:visibility="gone"
+                android:background="@drawable/nav_bg"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:id="@+id/we_recommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                       android:src="@drawable/img_specialoffer"  />
+
+                <TextView
+                    android:id="@+id/img_werecomnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/we_recommend"
+                      android:text="Special Offers"
+                    android:padding="4dp"
+                    android:singleLine="true"
+                   
+                    android:textSize="10.1sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:id="@+id/upgradepack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.65"
+                android:background="@drawable/nav_bg"
+                android:padding="8dp" >
+
+                <ImageView
+                      android:id="@+id/img_explore_plans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                      android:src="@drawable/img_exploreplans" />
+
+                <TextView
+                    android:id="@+id/tv_explore_plans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_explore_plans"
+                    android:layout_centerHorizontal="true"
+                    android:text="Upgrade Plans"
+                    android:singleLine="true"
+                    android:padding="4dp"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+          
+                
+        </LinearLayout>
+        
+        </LinearLayout>
+          
+          
+          
+          
+              
+
+            <!--  <RelativeLayout
+                 android:id="@+id/werecomd"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="2"
+                 android:background="@drawable/bg_com_bottom"
+                 android:padding="8dp" >
+
+                 <ImageView
+                     android:id="@+id/we_recommend"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentTop="true"
+                     android:layout_centerHorizontal="true"
+                     android:padding="4dp"
+                     android:src="@drawable/img_werecommend" />
+
+                 <TextView
+                     android:id="@+id/img_werecomnd"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                     android:layout_below="@+id/we_recommend"
+                     android:text="We Recommend"
+                     android:textSize="8sp" />
+             </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/upgradepack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_com_bottom"
+                    android:padding="8dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_explore_plans"
+                        android:layout_centerHorizontal="true"
+                        android:text="Explore PLans"
+                        android:textSize="8sp" />
+
+                    <ImageView
+                        android:id="@+id/img_explore_plans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="4dp"
+                        android:src="@drawable/img_exploreplans" />
+
+                </RelativeLayout> -->
+     
+              
+    </RelativeLayout>
+
+    <!-- footer start -->
+
+    <LinearLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer_act_bg"
+        android:gravity="center"
+        android:weightSum="4" >
+
+        <LinearLayout
+            android:id="@+id/inn_banner_home"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/btnhome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_home" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/footer_divider" />
+
+        <LinearLayout
+            android:id="@+id/inn_banner_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/btnprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_profile" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/footer_divider" />
+
+        <LinearLayout
+            android:id="@+id/inn_banner_notification"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/btnnotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_arlrts" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/footer_divider" />
+
+        <LinearLayout
+            android:id="@+id/inn_banner_help"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/btnhelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_hepl" >
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

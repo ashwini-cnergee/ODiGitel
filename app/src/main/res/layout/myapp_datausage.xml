@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circular="http://schemas.android.com/apk/res-auto"
+    xmlns:ppv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_scrn_myapp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mainviewup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/topbanner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" >
+
+            <ImageView
+                android:id="@+id/ivMenuDrawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="18dp"
+                android:paddingRight="60dp"
+                android:src="@drawable/myapp_drawer" />
+
+            <ImageView
+                android:id="@+id/imgs_myapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/myapp_logo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/scrolldata"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/banner"
+            android:layout_below="@+id/topbanner"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/myheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/titleheader"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/img_headrhome"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="DATA USAGE" />
+
+                    <ImageView
+                        android:id="@+id/img_headrhome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="2dp"
+                        android:src="@drawable/img_headerhome" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/titleheader"
+                        android:background="#000000" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- <middle Alloted data -->
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/myheader" >
+
+                <TableLayout
+                    android:id="@+id/tableLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp" >
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ebebeb"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp" >
+
+                        <TextView
+                            android:id="@+id/txtalloted"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="left"
+                            android:text="Alloted"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txttotaslalotted"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="left"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000"
+                            android:textSize="10sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ebebeb"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp" >
+
+                        <TextView
+                            android:id="@+id/txtused"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                             android:layout_weight="0.5"
+                            android:gravity="left"
+                            android:text="Used"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtallotedused"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="left"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="10sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ebebeb"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp" >
+
+                        <TextView
+                            android:id="@+id/txtremaining"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="left"
+                            android:text="Remaining"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtallotedremain"
+                             android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                             android:layout_weight="0.5"
+                            android:gravity="left"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="10sp" />
+                    </TableRow>
+                </TableLayout>
+
+                <com.cnergee.mypage.obj.CircularProgressBar
+                    android:id="@+id/circularprogressbar2"
+                    style="@style/Widget.ProgressBar.Holo.CircularProgressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/tableLayout1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dip"
+                    circular:backgroundColor="@color/color_green"
+                    circular:subtitle="subtitle"
+                    android:visibility="gone"
+                    circular:title="Title" />
+
+                <com.cnergee.widgets.ProgressPieView
+                    android:id="@+id/progressPieViewXml"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Xml"
+                    android:textColor="@color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:layout_centerHorizontal="true"
+                    ppv:backgroundColor="@color/color_green"
+                    ppv:progressColor="@color/holo_red_light"
+                    android:layout_below="@+id/circularprogressbar2"
+                    ppv:strokeWidth1="0dp"
+                    />
+                <TextView 
+                    android:layout_below="@+id/progressPieViewXml"
+                    android:id="@+id/tvUsedPercentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/footer_act_bg"
+            android:gravity="center"
+            android:weightSum="4" >
+
+            <LinearLayout
+                android:id="@+id/inn_banner_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/btnhome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/footer_home" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/footer_divider" />
+
+            <LinearLayout
+                android:id="@+id/inn_banner_profile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/btnprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/footer_profile" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/footer_divider" />
+
+            <LinearLayout
+                android:id="@+id/inn_banner_notification"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/btnnotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/footer_arlrts" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/footer_divider" />
+
+            <LinearLayout
+                android:id="@+id/inn_banner_help"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/btnhelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/footer_hepl" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

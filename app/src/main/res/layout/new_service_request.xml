@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_scrn_myapp"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.cnergee.mypage.Login" >
+
+    <RelativeLayout
+        android:id="@+id/mainview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/top_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+
+            <ImageView
+                android:id="@+id/ivMenuDrawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="18dp"
+                android:paddingRight="60dp"
+                android:src="@drawable/myapp_drawer" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/myapp_logo" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scroll_data"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/banner"
+            android:layout_below="@+id/top_view"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fillViewport="true" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/my_header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/header_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SERVICE REQUEST" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/header_txt"
+                        android:background="@color/label_black_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/my_header"
+                    android:padding="2dp" >
+
+                    <TableLayout
+                        android:id="@+id/tableLayout1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp" >
+                    </TableLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_spinnerList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tableLayout1"
+                        android:background="@drawable/editextlayout" >
+
+                        <Spinner
+                            android:id="@+id/spinnerList"
+                            style="@style/SpinnerAppTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/comments"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_spinnerList"
+                        android:layout_marginTop="6dp"
+                        android:layout_span="3"
+                        android:layout_weight="2"
+                        android:background="@drawable/editextlayout"
+                        android:gravity="top"
+                        android:hint="Please enter your comment"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:padding="2dp"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/relativeLayout2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/comments"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center" >
+
+                        <Button
+                            android:id="@+id/btncancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/btn_selector"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Cancel"
+                            android:textColor="@color/label_white_color" />
+
+                        <Button
+                            android:id="@+id/btnsubmit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/btn_selector"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Submit"
+                            android:textColor="@color/label_white_color" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- <***Middle****** > -->
+
+                <LinearLayout
+                    android:id="@+id/llselfresolution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_layout"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <RelativeLayout
+                        android:id="@+id/selfrsoluton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.50"
+                        android:background="@drawable/self_bg"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/self_resol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="5dp"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/self_icon" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/self_resol"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/img_selfresolt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Self"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                android:id="@+id/img_selfresolt3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Resolution"
+                                android:textSize="22sp" />
+
+                            <!--
+                                 <ImageView
+                                android:id="@+id/self_resol12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toRightOf="@+id/self_resol"
+                                android:padding="2dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/self_text" />
+                            -->
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <!--
+                    <RelativeLayout
+                        android:id="@+id/btnResetPwd"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.0"
+                        android:background="@drawable/bg_com_bottom"
+                        android:padding="5dp"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/img_reset_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:padding="2dp"
+                            android:src="@drawable/img_reset" />
+
+                        <TextView
+                            android:id="@+id/tv_reset_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_reset_pass"
+                            android:layout_centerHorizontal="true"
+                            android:text="Reset"
+                            android:textColor="@color/label_black_color"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/tv_reset_pass2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_reset_pass"
+                            android:layout_centerHorizontal="true"
+                            android:paddingBottom="4dp"
+                            android:text="Password"
+                            android:textColor="@color/label_black_color"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+                    -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_customer_care"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llselfresolution"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <RelativeLayout
+                        android:id="@+id/btncallcustomercare"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".75"
+                        android:background="@drawable/nav_bg"
+                        android:gravity="center"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img_customer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:padding="2dp"
+                            android:src="@drawable/img_customer" />
+
+                        <TextView
+                            android:id="@+id/txt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_Customer"
+                            android:layout_centerHorizontal="true"
+                            android:paddingBottom="4dp"
+                            android:text="Customer Care"
+                            android:textColor="@color/label_black_color"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/txt_Customer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_customer"
+                            android:layout_centerHorizontal="true"
+                            android:text="Call "
+                            android:textColor="@color/label_black_color"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/chat_customer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".75"
+                        android:visibility="gone"
+                        android:background="@drawable/nav_bg"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img_customer_chat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:padding="2dp"
+                            android:src="@drawable/img_chat" />
+
+                        <TextView
+                            android:id="@+id/txt_chat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_customer_chat"
+                            android:layout_centerHorizontal="true"
+                            android:text="Chat With "
+                            android:textColor="@color/label_black_color"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/txt_chat2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_chat"
+                            android:layout_centerHorizontal="true"
+                            android:paddingBottom="4dp"
+                            android:text="Customer Care"
+                            android:textColor="@color/label_black_color"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_24_ol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_customer_care"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <RelativeLayout
+                        android:id="@+id/btnresetMac"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".98"
+                        android:background="@drawable/nav_bg"
+                        android:gravity="center"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img_reset_mac"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:padding="2dp"
+                            android:src="@drawable/mac_reset" />
+
+                        <TextView
+                            android:id="@+id/tv_mac"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_reset_mac"
+                            android:layout_centerHorizontal="true"
+                            android:paddingBottom="4dp"
+                            android:text="Release MAC"
+                            android:textColor="@color/label_black_color"
+                          
+                            android:textSize="8sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btn_logoff"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".98"
+                        android:background="@drawable/nav_bg"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img_logoff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:padding="2dp"
+                            android:src="@drawable/logout" />
+
+                        <TextView
+                            android:id="@+id/txt_logoff1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_logoff"
+                            android:layout_centerHorizontal="true"
+                            android:text="End Session"
+                            android:textColor="@color/label_black_color"
+                            android:textSize="8sp" />
+
+                        <!--
+                             <TextView
+                            android:id="@+id/txt_logoff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_chat"
+                            android:layout_centerHorizontal="true"
+                            android:paddingBottom="4dp"
+                            android:text="End  Session"
+                            android:textColor="@color/label_black_color"
+                            android:textSize="11sp" />
+                        -->
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btnResetPwd"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.98"
+                        android:background="@drawable/nav_bg"
+                       
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img_reset_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:padding="2dp"
+                            android:src="@drawable/img_reset" />
+
+                        <TextView
+                            android:id="@+id/txt_reset_pwd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_reset_pass"
+                            android:layout_centerHorizontal="true"
+                            android:text="Reset Password"
+                           
+                            android:textColor="@color/label_black_color"
+                            android:textSize="8sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- <***********Footer starts from here ******> -->
+
+        <LinearLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/footer_act_bg"
+            android:gravity="center"
+            android:weightSum="4" >
+
+            <LinearLayout
+                android:id="@+id/inn_banner_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/btnhome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/footer_home" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/footer_divider" />
+
+            <LinearLayout
+                android:id="@+id/inn_banner_profile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/btnprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/footer_profile" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/footer_divider" />
+
+            <LinearLayout
+                android:id="@+id/inn_banner_notification"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/btnnotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/footer_arlrts" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/footer_divider" />
+
+            <LinearLayout
+                android:id="@+id/inn_banner_help"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/btnhelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/footer_hepl" >
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+   <dimen name="pay_now_lable">20sp</dimen>
+      <dimen name="wheel_time">100dp</dimen>
+      
+       <dimen name="speed_gv_height">45dp</dimen>
+     <dimen name="data_gv_height">45dp</dimen>
+     <dimen name="post_speed_gv_height">35dp</dimen>
+     <dimen name="pay_now_new">26sp</dimen>
+      <dimen name="popup_width">120dp</dimen>
+       <dimen name="profile_text">14sp</dimen>
+</resources>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_scrn_myapp"
+    android:orientation="horizontal" >
+    
+    <RelativeLayout 
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:id="@+id/topbanner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    >
+    
+       <!--  <ImageView
+        android:id="@+id/imgion"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/ion_white_logo" /> -->
+    <ImageView 
+        android:id="@+id/imgdvois"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/myapp_logo"></ImageView>
+    
+    
+    
+</RelativeLayout>
+    
+    <ScrollView
+    android:id="@+id/scrolldata"
+    android:layout_above="@+id/banner"
+    android:layout_below="@+id/topbanner"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_height="match_parent" >
+    
+        <RelativeLayout android:id="@+id/mainview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+<RelativeLayout android:id="@+id/myheader"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           >
+           
+           
+       
+       <TextView 
+            android:id="@+id/titleheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="SPECIAL OFFERS"
+           android:gravity="center_vertical"
+          
+               />
+     <View
+         android:layout_width="wrap_content"
+         android:layout_height="1dp"
+         android:background="@color/label_black_color"
+         android:layout_below="@+id/titleheader"
+         />
+ </RelativeLayout>   
+ <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/myheader"
+        android:background="@color/bg_myapp_common"
+        android:paddingBottom="20dp" >
+        
+        
+<WebView 
+    android:id="@+id/webView1"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    />
+</RelativeLayout>
+</RelativeLayout>
+
+</ScrollView>
+
+    <View 
+    android:layout_width="fill_parent"
+    android:layout_height="0.5dp"
+    
+    android:layout_below="@+id/scrolldata"
+    android:background="#282828"/>
+ <LinearLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/footer_act_bg"
+        android:gravity="center"
+        android:weightSum="4" >
+
+        <LinearLayout
+            android:id="@+id/inn_banner_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/btnhome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_home" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/footer_divider" />
+
+        <LinearLayout
+            android:id="@+id/inn_banner_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/btnprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_profile" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/footer_divider" />
+
+        <LinearLayout
+            android:id="@+id/inn_banner_notification"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/btnnotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_arlrts" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/footer_divider" />
+
+        <LinearLayout
+            android:id="@+id/inn_banner_help"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/btnhelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_hepl" >
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+        
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "780135354011",
+    "firebase_url": "https://fasttnet-broadband-c38bc.firebaseio.com",
+    "project_id": "fasttnet-broadband-c38bc",
+    "storage_bucket": "fasttnet-broadband-c38bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780135354011:android:c6a625dc0fd51404",
+        "android_client_info": {
+          "package_name": "com.cnergee.myapp.fasttnet.broadband"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "780135354011-incmmlqoqc7soisb08jkm81uaf4oqden.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfYXRppSI1tmvSfVCRGtXWrCIf5mO9b0E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_color"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dialog_rl_padding_bottom"
+    android:paddingLeft="@dimen/dialog_rl_padding_left"
+    android:paddingRight="@dimen/dialog_rl_padding_right"
+    android:paddingTop="@dimen/dialog_rl_padding_top" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_rl_padding_left"
+            android:layout_marginRight="@dimen/home_rl_padding_right"
+            android:paddingLeft="@dimen/dialog_rl_padding_left"
+            android:paddingRight="@dimen/dialog_rl_padding_right"
+            android:text="Select Payment Gateway option:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_pg_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/nav_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/home_rl_padding_bottom"
+                android:paddingLeft="@dimen/home_rl_padding_left"
+                android:paddingRight="@dimen/home_rl_padding_right"
+                android:paddingTop="@dimen/home_rl_padding_top"
+                android:weightSum="5" >
+
+                <TextView
+                    android:id="@+id/tv_payment_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Pay By " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_payment_1"
+                    android:layout_centerInParent="true"
+                    android:text=" Citrus" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pg_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/nav_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/home_rl_padding_bottom"
+                android:paddingLeft="@dimen/home_rl_padding_left"
+                android:paddingRight="@dimen/home_rl_padding_right"
+                android:paddingTop="@dimen/home_rl_padding_top"
+                android:weightSum="5" >
+
+                <TextView
+                    android:id="@+id/tv_payment_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Pay By " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_payment_2"
+                    android:layout_centerInParent="true"
+                    android:text=" CCAvenue " />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

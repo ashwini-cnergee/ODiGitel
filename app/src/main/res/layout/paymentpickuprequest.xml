@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_scrn_myapp"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/topbanner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+
+        <!--
+        <ImageView
+        android:id="@+id/imgion"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/ion_white_logo" />
+        -->
+
+        <ImageView
+            android:id="@+id/imgdvois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/myapp_logo" >
+        </ImageView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrolldata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/banner"
+        android:layout_below="@+id/topbanner"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/mainview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/myheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/titleheader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center_vertical"
+                    android:text="PAYMENT PICK UP REQUEST"
+                    android:textColor="@color/label_black_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/titleheader"
+                    android:background="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/myheader"
+                android:background="@drawable/roundededges2"
+                android:paddingBottom="20dp" >
+
+                <RelativeLayout
+                    android:id="@+id/datetime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#ebebeb"
+                    android:orientation="vertical" >
+
+                    <include
+                        android:id="@+id/datetimepicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        layout="@layout/date_time_dialog" />
+
+                    <EditText
+                        android:id="@+id/txtpaypickup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="Please Select Date"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/datetimepicker"
+                        android:layout_toRightOf="@+id/txtpaypickup"
+                        android:gravity="top"
+                        android:hint="Enter Your Message"
+                        android:layout_marginTop="5dp"
+                        android:inputType="textMultiLine"
+                        android:lines="3" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/datetime"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btncancel"
+                        android:layout_width="0dip"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/btn_selector"
+                        android:text="Cancel"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/btnsubmit"
+                        android:layout_width="0dip"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:text="Submit"
+                        android:background="@drawable/btn_selector"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/scrolldata"
+        android:background="#282828" />
+
+    <LinearLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/footer_act_bg"
+        android:gravity="center"
+        android:weightSum="4" >
+
+        <LinearLayout
+            android:id="@+id/inn_banner_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/btnhome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_home" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/footer_divider" />
+
+        <LinearLayout
+            android:id="@+id/inn_banner_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/btnprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_profile" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/footer_divider" />
+
+        <LinearLayout
+            android:id="@+id/inn_banner_notification"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/btnnotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_arlrts" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/footer_divider" />
+
+        <LinearLayout
+            android:id="@+id/inn_banner_help"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/btnhelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_hepl" >
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

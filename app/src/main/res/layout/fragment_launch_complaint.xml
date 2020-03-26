@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:floatview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_scrn_myapp"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+                    android:id="@+id/relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+                    android:padding="2dp" >
+
+                    <TableLayout
+                        android:id="@+id/tableLayout1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp" >
+                    </TableLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_spinnerList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tableLayout1"
+                        android:background="@drawable/editextlayout" >
+
+                        <Spinner
+                            android:id="@+id/spComplaint"
+                            style="@style/SpinnerAppTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/comments"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_spinnerList"
+                        android:layout_marginTop="6dp"
+                        android:layout_span="3"
+                        android:layout_weight="2"
+                        android:background="@drawable/editextlayout"
+                        android:gravity="top"
+                        android:hint="Please enter your comment"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:padding="2dp"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/relativeLayout2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/comments"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center" >
+
+                     
+
+                        <Button
+                            android:id="@+id/btncancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/btn_selector"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Cancel"
+                            android:textColor="@color/label_white_color" />
+
+                        <Button
+                            android:id="@+id/btnsubmit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/btn_selector"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Submit"
+                            android:textColor="@color/label_white_color" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+</ScrollView>

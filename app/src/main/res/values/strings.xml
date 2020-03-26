@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ODiGitel</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="btn_renew">Renewal</string>
+    <string name="btn_changepck">Change Pack</string>
+    <string name="btn_confirm">Confirm</string>
+
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+
+    <string name="shared_preferences_name">CNERGEE_BILLING</string>
+    <string name="shared_preferences_profile">member_profile</string>
+    <string name="shared_preferences_renewal">member_renewal</string>
+    <string name="shared_preferences_payment_history">payment_history</string>
+    <string name="shared_preferences_notification_list">notification_list</string>
+    <string name="app_please_enter_valid_label">Please enter mobile number.</string>
+    <string name="app_please_enter_valid_label_loginid">Please enter memberloginid.</string>
+    <string name="app_please_wait_label">Please Wait..</string>
+    <string name="login_invalid">Invalid Login Please Try Again.</string>
+    <string name="app_splash_label">Powered by Cnergee</string>
+    <string name="app_please_enter_valid_date">Please Select Payment PickUp Date</string>
+    <string name="app_upgradepackage">Upgrade package</string>
+    <string name="package_rate">Package Rate</string>
+    <string name="final_price">Final Price</string>
+    <string name="package_updatefrom">Package Update From</string>
+    <string name="immediate_planChange">Immediate</string>
+    <string name="next_renewal">Schedule to Next Renewal</string>
+    <string name="conversion_renewal">Conversion</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="rupees_sign">Amount (\u20B9)</string>
+    <string name="paynow_new">\u20B9 PayNow</string>
+    <string name="plan_price">Discounted Price (\u20B9)</string>
+    <string name="package_plan_price">My Price (\u20B9)</string>
+    <string name="only_rupees_sign"> My Price [\u20B9]</string>
+    <string name="termsandcondition">I have read and accepted the Terms and Conditions. 
+                    We as a merchant shall be under no liability whatsoever in respect of any loss or damage arising directly or indirectly out of the decline of authorization for any Transaction, 
+                    on Account of the Cardholder having exceeded the preset limit mutually agreed by us with our acquiring bank from time to time.</string>
+    <string name="acceptcheck"> I certify that by selecting this checkbox,</string>
+    <string name="privacy">I have read and accepted the Privacy Policy, Cancellation and Refund Policy.</string>
+    <string name="app_notification_label_1">Assign New Notification!</string>
+    <string name="app_notification_label_2">Cnergee Administator</string>
+    <string name="sms_string"><![CDATA[Please check SMS for <br/> the password ]]></string>
+    <string name="sender_string">Server</string>
+    <string name="receiver_string">Client</string>
+    <string name="time">Time</string>
+    <string name="content_desc">Chat Image</string>
+    <string name="str_button_download">Download</string>
+    <string name="str_button_view">View</string>
+    <string name="str_button_send_msg">Send</string>
+    <string name="shared_preferences_app_setting">Send</string>
+    <string name="app_setting">app_settings</string>
+    <string name="fail_response">Please try again!! Server not able to respond.</string>
+    <string name="str_gb">DATA TRANSFER [Gb]</string>
+    <string name="topup_note">Note: The selection will be added in your current plan.</string>
+    <string name="self_please_wait_label">\n We are identifying your problem \n It will take few seconds</string>
+    <string name="click_here"><u>Click Here For Details</u></string>
+    <string name="cheque_bounce_message">You are not allowed to renew from App \n Please renew from nearest branch office.</string>
+    <string name="update_msg">Dear Subscriber, Please Update to the New Version of \'ODiGitel Broadband App\'. \nVisit Play Store!</string>
+    <string name="compulsory_update_msg">New Version of App \'ODiGitel Broadband App\' is now Available. \nPlease Visit Play Store to Update!</string>
+    <string name="exist_mac">
+<![CDATA[
+ Existing\n
+Machine
+  ]]>
+    </string>
+    
+     <string name="new_mac">
+    <![CDATA[
+ New\n
+Machine
+  ]]>        
+</string>
+
+    <string name="rs">\u20B9</string>
+
+
+    <string name="rate_app_text"><![CDATA[If you enjoy using ODiGitel Broadband App, please take a moment to rate the app. \nThank you for your support!]]></string>
+
+    <string name="go_back"><u>Go Back</u></string>
+    <string name="package_price">package Price</string>
+    <string name="playstore_link">https://play.google.com/store/apps/details?id=com.cnergee.myapp.fasttnet.broadband&amp;hl=en</string>
+    <string name="app_please_wait">Payment Processing Please Wait.</string>
+</resources>

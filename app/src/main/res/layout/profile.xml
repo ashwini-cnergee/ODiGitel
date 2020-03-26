@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/label_gray_color"
+    android:orientation="horizontal" >
+    
+    <RelativeLayout
+    android:id="@+id/mainview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    >  
+<RelativeLayout 
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:id="@+id/topbanner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    >
+    
+        <!-- <ImageView
+        android:id="@+id/imgion"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/ion_white_logo" /> -->
+    <ImageView 
+        android:id="@+id/imgdvois"
+        android:layout_height="35dp"
+        android:layout_width="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/myapp_logo"></ImageView>
+    
+    
+    
+</RelativeLayout>
+    
+    
+    
+   <RelativeLayout 
+    android:id="@+id/scrolldata"
+    android:layout_above="@+id/banner"
+    android:layout_below="@+id/topbanner"
+    android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp">
+    
+    
+     
+     <RelativeLayout 
+            android:id="@+id/contentdata"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+    
+        <RelativeLayout
+    android:id="@+id/mainview1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+     <RelativeLayout android:id="@+id/myheader"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           >
+           
+           
+       
+       <TextView 
+            android:id="@+id/titleheader"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:text="My Profile"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/headimg"
+               />
+     
+ </RelativeLayout> 
+            
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/myheader"
+                android:background="@drawable/roundededges2"
+                android:paddingBottom="20dp" 
+                >
+       
+         <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tableLayout1"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp" >
+                
+                <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name "
+            android:textSize="12sp" 
+            android:textColor="#000000" />
+
+                
+                <TextView
+                    android:id="@+id/colon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:paddingRight="2dp"
+                    android:text=":" />
+                
+                 <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" 
+            android:layout_weight="2"
+            android:textColor="@color/label_font_color"/>
+                
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp" >
+
+                <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login ID "
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/colon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:paddingRight="2dp"
+                    android:text=":" />
+
+                <TextView
+            android:id="@+id/txtloginid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/label_font_color"
+            android:layout_weight="2"
+            android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp" >
+
+                <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" 
+            android:text="Activation Date "
+            android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/colon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:paddingRight="2dp"
+                    android:text=":" />
+
+                <TextView
+            android:id="@+id/txtactivationdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="2"
+            android:textSize="12sp" 
+            android:textColor="@color/label_font_color" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp" >
+
+                 <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" 
+            android:text="Date of Birth "
+            android:textColor="#000000" />
+        
+
+                <TextView
+                    android:id="@+id/colon4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:paddingRight="2dp"
+                    android:text=":" />
+
+                <TextView
+            android:id="@+id/txtdob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="2"
+            android:textSize="12sp"
+            android:textColor="@color/label_font_color" />
+            </TableRow>
+            
+            
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp" >
+
+                 <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Mobile No. "
+            android:textColor="#000000" />
+        
+
+                <TextView
+                    android:id="@+id/colon5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:paddingRight="2dp"
+                    android:text=":" />
+
+                  <TextView
+            android:id="@+id/txtmobno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="2"
+            android:textSize="12sp" 
+            android:textColor="@color/label_font_color"/>
+            
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp" >
+
+                 <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" 
+            android:text="Alternate No. "
+            android:textColor="#000000" />
+        
+
+                <TextView
+                    android:id="@+id/colon6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:paddingRight="2dp"
+                    android:text=":" />
+
+               <TextView
+            android:id="@+id/txtalternateno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp" 
+            android:layout_weight="2"
+            android:textColor="@color/label_font_color"/>
+            </TableRow>
+            
+            
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp" >
+
+                  <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email ID "
+            android:textSize="12sp" 
+            android:textColor="#000000" />        
+
+                <TextView
+                    android:id="@+id/colon7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:paddingRight="2dp"
+                    android:text=":" />
+
+                <TextView
+            android:id="@+id/txtemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="2"
+            android:textSize="12sp" 
+            android:textColor="@color/label_font_color"/>
+        
+            </TableRow>
+            
+            
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp" >
+
+                 <TextView
+            android:id="@+id/TextView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status "
+            android:textSize="12sp" 
+            android:textColor="#000000" />
+        
+
+                <TextView
+                    android:id="@+id/colon8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:paddingRight="2dp"
+                    android:text=":" />
+
+                <TextView
+            android:id="@+id/txtstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="2"
+            android:textSize="12sp" 
+            android:textColor="@color/label_font_color"/>
+            </TableRow>
+            
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp" >
+
+                  <TextView
+            android:id="@+id/TextView09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" 
+            android:text="Inst. Address "
+            android:textColor="#000000" />
+        
+
+                <TextView
+                    android:id="@+id/colon9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:paddingRight="2dp"
+                    android:text=":" />
+
+              <TextView
+            android:id="@+id/txtaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp" 
+            android:layout_weight="2"
+            android:textColor="@color/label_font_color"/>
+            </TableRow>
+            
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp" >
+
+                    <TextView
+            android:id="@+id/TextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Package "
+            android:textSize="12sp" 
+            android:textColor="#000000" />
+
+        
+
+                <TextView
+                    android:id="@+id/colon10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:paddingRight="2dp"
+                    android:text=":" />
+
+              <TextView
+            android:id="@+id/txtpackage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="2"
+            android:textSize="12sp" 
+            android:textColor="@color/label_font_color"/>
+            </TableRow>
+        </TableLayout>       
+                
+                
+        
+        
+
+    </RelativeLayout>
+            
+            
+            </RelativeLayout>
+        
+        
+    </LinearLayout>
+    </RelativeLayout>
+    
+    </RelativeLayout>
+    
+<View 
+    android:layout_width="fill_parent"
+    android:layout_height="0.5dp"
+    
+    android:layout_below="@+id/scrolldata"
+    android:background="#282828"/>
+
+  <LinearLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/footer_act_bg"
+        android:gravity="center"
+        android:weightSum="4" >
+
+        <LinearLayout
+            android:id="@+id/inn_banner_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+           
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/btnhome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_home" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/footer_divider" />
+
+        <LinearLayout
+            android:id="@+id/inn_banner_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:background="@drawable/footer_dectv_bg"
+            
+             >
+
+            <ImageView
+                android:id="@+id/btnprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_profile" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/footer_divider" />
+
+        <LinearLayout
+            android:id="@+id/inn_banner_notification"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/btnnotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_arlrts" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/footer_divider" />
+
+        <LinearLayout
+            android:id="@+id/inn_banner_help"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/btnhelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/footer_hepl" >
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

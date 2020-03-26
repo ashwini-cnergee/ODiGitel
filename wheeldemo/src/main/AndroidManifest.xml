@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kankan.wheel.demo"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <application android:icon="@drawable/icon" android:label="WheelDemo">
+
+        <activity android:name="kankan.wheel.demo.WheelDemo">
+
+        </activity>
+        <activity android:name="kankan.wheel.demo.Time2Activity" android:label="Time 2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="kankan.wheel.WHEEL_SAMPLE"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+
+</manifest> 

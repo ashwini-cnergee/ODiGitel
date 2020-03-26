@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="BUILD_VERSION_PATH">182.48.200.10</string>
+    <string name="FTP_USERNAME">ccrm</string>
+    <string name="FTP_PASSWORD">atmos</string>
+    <string name="BUILD_VERSION_FILE">Version.txt</string>
+    <string name="BUILD_APK_FILE">Version.txt</string>
+    <string name="BUILD_APK_FILE_NAME">CnergeeBilling</string>
+    <string name="BUILD_PACKAGE_NAME">package:com.cnergee.billing</string>
+    <string name="WSDL_TARGET_NAMESPACE">http://tempuri.org/</string>
+    
+    <!-- <string name="SOAP_URL">http://49.143.252.15:8001/CCRMToMobileIntegration.asmx?wsdl</string> -->
+    <!-- <string name="SOAP_URL">http://114.79.129.12:8001/CCRMToMobileIntegration.asmx?wsdl</string> -->
+    <!-- <string name="SOAP_URL">http://114.79.129.12:8001/CCRMToMobileIntegration.asmx?wsdl</string> -->
+    <!-- <string name="SOAP_URL">http://10.0.2.2/CCRMToMobileIntegration.asmx?wsdl</string> -->
+
+
+    <!-- <string name="SOAP_URL">http://114.79.129.12:8003/CCRMToMobileIntegration.asmx?wsdl</string> -->
+
+    <!-- <string name="SOAP_URL">http://mobilewebservice.cmaya.in:8005/CCRMToMobileIntegration.asmx?wsdl</string> -->
+     
+    <!-- DVOIS -->
+   <!--  <string name="SOAP_URL">http://114.79.129.12:8005/CCRMToMobileIntegration.asmx?wsdl</string> -->
+
+    <!-- CM000015DV -->
+	<!-- <string name="SOAP_URL">http://114.79.129.11:8005/CCRMToMobileIntegration.asmx?wsdl</string> -->
+
+    <!-- CC Avenue Url -->
+     <!--<string name="SOAP_URL">http://myappapi.cmaya.in:8008/CCRMToMobileIntegration.asmx?wsdl</string>-->
+
+    <string name="SOAP_URL">http://103.54.180.3:8007/CCRMToMobileIntegration.asmx?wsdl</string>  <!--for others-->
+
+    <!--<string name="SOAP_URL">http://103.54.183.98:8008/CCRMToMobileIntegration.asmx?wsdl</string>-->
+
+    <string name="METHOD_GET_MEMBER_INFO">GetMemberInfo</string>
+    <string name="METHOD_GET_LOGIN_BY_NUMBER">GetLoginByNumber</string>
+    <string name="METHOD_GET_LOGIN_BY_MEMBERID">GetLoginByMemberId</string>
+    <string name="METHOD_UPDATE_NOTIFICATION">UpdateNotification</string>
+    <string name="METHOD_PACKAGE_DETAILS">GetSubscriberPackageDetails</string>
+    <!-- OLD <string name="METHOD_SUBSCRIBER_DETAILS">SubscriberDetails</string> -->
+    <string name="METHOD_SUBSCRIBER_DETAILS">MyAppSubscriberDetails</string>
+    <string name="METHOD_INSERT_PAYMENTPICKUP">InsertPaymentPickupRequest</string>
+    <string name="METHOD_BIND_COMPLAINT">BindComplaints</string>
+    <string name="METHOD_PAYMENTHISTORY">GetPaymentHistory</string>
+    <string name="METHOD_PACKAGELIST">GetPackageListByMemberid</string>
+    <string name="METHOD_PACKAGEADJUSTMENT">GetPackageAdjustmentAmountforAPP_New</string>
+    <string name="METHOD_GET_COMPLAINTNO">GetComplaintNo</string>
+    <string name="METHOD_INSERT_COMPLAINTS">InsertMemberComplaints</string>
+    <string name="METHOD_GET_NOTIFICATION_BAR">GetNotification</string>
+  <!--   <string name="METHOD_GET_TRANSACTIONID">GetTransactionId</string> -->
+    <string name="MTHOD_GET_NOTIFICATION">GetNotificationonMemberId</string>
+    <string name="METHOD_GETUSAGEDETAILS">GetUsageDetails</string>
+    <string name="METHOD_GET_HMAC_SIGNATURE">GetCitrusSignatureLive</string>
+    <string name="METHOD_GET_MEMBER_DETAILS">GetMemberDetails</string>
+    <string name="METHOD_GET_MEMBER_PAYMENTS_DETAILS">GetPaymentHistoryDetails</string>
+   <!--  <string name="METHOD_BEFORE_MEMBER_PAYMENTS">BeforeMemberPaymentPGInsertUpdate</string> -->
+    <string name="METHOD_BEFORE_MEMBER_PAYMENTS">BeforeMemberPaymentPGInsertUpdate</string>
+    <string name="METHOD_BEFORE_MEMBER_PAYMENTS_NEW">BeforeMemberPaymentPGInsertUpdate_New</string>
+    <string name="METHOD_AFTER_MEMBER_PAYMENTS">AfterMemberPaymentPGInsertUpdate</string>
+    <string name="METHOD_MYPAGE_RENEWAL_PROCESS">MypageMobileRenewalProcess</string>
+    <string name="METHOD_INSERT_PHONE_DETAILS">InsertPhoneDetails</string>
+    <string name="METHOD_COMPLAINT_CATEGORY_LIST">GetComplaintCategoryList</string>
+    <string name="METHOD_DELETE_NOTIFICATION">DeletNotification</string>
+    <string name="METHOD_GET_CURRENT_STATUS">GetCurrentStatus</string>
+    <string name="METHOD_GET_SMS_AUTHENTICATION">VerifyPassword</string>
+    <string name="METHOD_GET_CUSTOMER_CARE_DETAILS">GetCustomerDetails</string>
+    <string name="METHOD_CHANGE_PASSWORD">ChangePassword</string>
+    <string name="METHOD_RESET_PASSWORD">ResetPassword</string>
+    <string name="METHOD_RESET_MAC">ResetMacAddress</string>
+    <string name="METHOD_GET_CITRUS_CONSTANTS">GetCitrusConstant</string>
+    <string name="METHOD_LOG_OUT_BROWSER">LogOffCustomer</string>
+    <string name="METHOD_GET_OFFER_DETAILS">GetCustomerOffer</string>
+    <string name="METHOD_GET_USERNAME_PASSWORD">GetMemberLoginDetails</string>
+    <string name="METHOD_GET_AREA_SETTING">GetAreawiseSetting</string>
+    <string name="METHOD_UPDATE_PHONE_DETAILS">GetAppVersionDetails</string>
+    <string name="METHOD_GET_SERVER_MESSAGE">ReceivedMessage</string>
+    <string name="METHOD_SEND_SERVER_MESSAGE">SendMessage</string>
+    <string name="METHOD_UPDATE_NOTIFY_ID">UpdateChatNotification</string>
+    <string name="METHOD_GET_SELF_RESOLUTION">GetSelfResolution</string>
+    <string name="METHOD_GET_MULTIPLE_NOTIFICATION">GetNotificationIPhone</string>
+    <string name="METHOD_UPDATE_PROFILE">UpdateProfile</string>
+    <string name="METHOD_CHAT_REQUEST">RequestChat</string>
+    <string name="METHOD_GET_PLAN_PARAMETER">GetMyCalci</string>
+    <string name="METHOD_CALCULATOR_FINAL_PRICE">GetDiscount</string>
+    <string name="METHOD_PACKAGEADJUSTMENT_FOR_CALCI">GetPackageAdjustmentAmountforAPPCalci</string>
+    <string name="METHOD_GET_ATOM_SIGNATURE_LIVE">GetAtomSignatureLive</string>
+    <string name="METHOD_PAYUMONEY_SIGNATURE_LIVE">GetPayUMoneySignature</string>
+
+    <string name="METHOD_Aggrepay_SIGNATURE_LIVE">GetAgreePaySignatureLive</string>
+
+    <string name="METHOD_GET_CURRENT_VERSION">GetMyVersionWithMemberId</string>
+    <string name="METHOD_GET_PLANDETAILS_FOR_TOPUP">GetTopupPlans</string>
+    <string name="METHOD_GET_ALLDETAILS_FOR_TOPUP">GetTopup</string>
+    <string name="METHOD_RENEWAL_PROCESS_TOPUP">TopUpRenewalProcess</string>
+    <string name="METHOD_GET_NEW_CONN">GenralShortEnquiryForm</string>
+    <string name="METHOD_GET_ADDITIONAL_AMT">GetAdditionAmountDataForMyApp</string>
+
+    <string name="METHOD_RENEWAL_REACTIVATE_METHOD">MyAppRenewalProcess</string>
+    <string name="METHOD_PING_SERVER">UpdatePhoneDetails</string>
+    <string name="METHOD_GET_COMPLAINT_CATEGORY">BindComplaintCategoryMaster</string>
+    
+    <string name="METHOD_GET_COMPLAINT_MASTER">BindComplaintMaster</string>
+	<string name="METHOD_GET_QUESTION_ANSWER">BindQuestions</string>
+	<string name="METHOD_GET_CCAVENUE_SIGNATURE">GetCCAvenueSignatureLive</string>
+	<string  name="METHOD_UPDATE_PHONE_DETAILS_">UpdatePhoneDetails</string>	
+	<string name="METHOD_PACKAGELIST_BY_CONNECTIONTYPEID">GetPackageListWithConnectionTypeByMemberid</string>
+	 <string name="METHOD_INSERT_PHONE_DETAILS_WITH_APPVERSION">InsertPhoneDetailsWithAppVersion</string>
+	 <string name="METHOD_GET_TRANSACTIONID_WITH_BANK_NAME">GetTransactionIdWithBankName</string>
+	 
+	  <string name="METHOD_CHECK_VALID_SMS_PG_REQUEST">GetPGSMSUniqueId</string>
+	  <string name="METHOD_INSERT_SMS_UNIQUEID_TRACKID">InsertPGSMSFollowup</string>
+    <string name="METHOD_ENQUIRY_WITH_SUBSCRIBERID">GenralShortEnquiryFormRef</string>
+    <string name="METHOD_BEFORE_MEMBER_PAY_WITH_TRACKID">BeforeMemberPaymentPGInsertUpdate_withTrackID</string>
+
+</resources>

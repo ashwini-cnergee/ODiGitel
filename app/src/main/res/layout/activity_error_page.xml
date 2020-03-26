@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orange_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_ion_white_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/white_logo_error"
+        android:layout_alignLeft="@+id/tv_try"
+        android:layout_alignStart="@+id/tv_try"
+        android:layout_alignRight="@+id/tv_try"
+        android:layout_alignEnd="@+id/tv_try" />
+
+    <ImageView
+        android:id="@+id/iv_cloud_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_ion_white_logo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/white_cloud_error" />
+
+    <TextView
+        android:id="@+id/tv_app_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_cloud_error"
+        android:layout_centerHorizontal="true"
+        android:text="Oops...something went wrong"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+         android:id="@+id/tv_go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_try"
+        android:layout_centerHorizontal="true"
+        android:text="@string/go_back"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_try"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please try again later."
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_below="@+id/tv_app_down"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

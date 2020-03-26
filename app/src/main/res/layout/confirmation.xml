@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_scrn_myapp"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:id="@+id/topbanner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/imgdvois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/myapp_logo" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/myheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cfcfcf" >
+
+            <TextView
+                android:id="@+id/titleheader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:text="CONFIRMATION" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:layout_below="@+id/myheader" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextView02"
+                android:layout_marginTop="20dp"
+                android:background="@color/bg_myapp_common"
+                android:paddingLeft="5dp"
+                android:padding="5dp"
+                android:text="UserName :"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/TextView03"
+                android:layout_below="@+id/TextView03"
+                android:layout_marginTop="20dp"
+                android:background="@color/bg_myapp_common"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:text="Address :"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/TextView03"
+                android:layout_below="@+id/TextView04"
+                android:layout_marginTop="20dp"
+                android:background="@color/bg_myapp_common"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:paddingLeft="5dp"
+                android:text="Email Id :"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/txtmobileno"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView02"
+                android:layout_alignBottom="@+id/TextView02"
+                android:layout_alignLeft="@+id/txtloginId"
+                android:layout_marginRight="5dp"
+                android:background="@color/bg_myapp_common"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtusername"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView03"
+                android:layout_alignBottom="@+id/TextView03"
+                android:layout_alignLeft="@+id/txtaddress"
+                android:layout_marginRight="5dp"
+                android:background="@color/bg_myapp_common"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtaddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView04"
+                android:layout_alignBottom="@+id/TextView04"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/TextView04"
+                android:background="@color/bg_myapp_common"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/txtemail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView05"
+                android:layout_alignBottom="@+id/TextView05"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/TextView05"
+                android:background="@color/bg_myapp_common"
+                android:visibility="gone"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/txtmemid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtaddress"
+                android:layout_marginRight="5dp"
+                android:background="@color/label_text"
+                android:padding="5dp"
+
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtloginId"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:layout_toRightOf="@+id/TextView01"
+                android:gravity="top|left"
+                android:padding="5dp"
+                android:text=""
+                android:background="@color/bg_myapp_common"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:background="@color/bg_myapp_common"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtloginId"
+                android:layout_alignBottom="@+id/txtloginId"
+                android:paddingLeft="5dp"
+                android:padding="5dp"
+                android:text="Member ID :"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtloginId"
+                android:layout_marginTop="16dp"
+                android:layout_toLeftOf="@+id/txtmobileno"
+                android:background="@color/bg_myapp_common"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:text="Mobile No :"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtaddress"
+                android:orientation="vertical"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="10dp"
+                android:gravity="center" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnconfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/btn_selector"
+                android:paddingRight="10dp"
+                android:text="Confirm"
+                android:textColor="@color/label_white_color" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

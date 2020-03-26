@@ -1,0 +1,43 @@
+<resources>
+
+    <style name="AppThemeAppCompact">
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/label_orange_color</item>
+        <item name="colorPrimaryDark">@color/label_orange_color</item>
+        <item name="colorAccent">@android:color/black</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+        <item name="android:editTextStyle">@style/MyEditTextStyle</item>
+        <item name="android:radioButtonStyle">@style/MyRBStyle</item>
+        <item name="colorControlNormal">@android:color/black</item>
+    </style>
+
+    <style name="NoActionBar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/label_orange_color</item>
+        <item name="colorPrimaryDark">@color/label_orange_color</item>
+        <item name="colorAccent">@android:color/black</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+        <item name="android:editTextStyle">@style/MyEditTextStyle</item>
+        <item name="android:radioButtonStyle">@style/MyRBStyle</item>
+        <item name="colorControlNormal">@android:color/black</item>
+    </style>
+
+    <style name="MyTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="MyEditTextStyle" parent="android:Widget.EditText">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@android:color/black</item>
+    </style>
+
+
+    <style name="MyRBStyle" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@android:color/black</item>
+    </style>
+</resources>

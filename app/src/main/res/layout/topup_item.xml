@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_gv" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/speed_gv_height"
+        android:background="@drawable/top_up_button"
+        android:gravity="center"
+        android:layout_margin="1dp"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            
+            android:layout_gravity="center"
+            android:textColor="#ffffff"/>
+        
+          <TextView 
+            android:id="@+id/tvUnit"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textSize="8sp"
+            android:visibility="gone"
+            android:textColor="#dc7e00"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

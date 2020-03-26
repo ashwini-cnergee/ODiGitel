@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:background="@drawable/bg_scrn_myapp"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/mainview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/topbanner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" >
+
+            <ImageView
+                android:id="@+id/imgdvois"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/myapp_logo" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/topbanner"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+            
+            <TextView
+                android:id="@+id/txt_head"
+                android:text="UPDATE PROFILE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               />
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txt_head"
+            android:background="@color/label_black_color"></View>
+        
+        
+        
+        </RelativeLayout>
+        
+        <!-- <******************************Main data Starts From here********************************  >
+         -->
+            
+           
+              
+    <LinearLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/footer_act_bg"
+            android:gravity="center"
+            
+            android:weightSum="4" >
+
+            <LinearLayout
+                android:id="@+id/inn_banner_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/btnhome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/footer_home" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/footer_divider" />
+
+            <LinearLayout
+                android:id="@+id/inn_banner_profile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/footer_dectv_bg"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/btnprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/footer_profile" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/footer_divider" />
+
+            <LinearLayout
+                android:id="@+id/inn_banner_notification"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/btnnotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/footer_arlrts" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/footer_divider" />
+
+            <LinearLayout
+                android:id="@+id/inn_banner_help"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/btnhelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/footer_hepl" >
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+<ScrollView 
+    android:id="@+id/scroll_date"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+    android:layout_below="@+id/header_text"
+      android:layout_above="@+id/banner"
+           
+      >
+   <RelativeLayout
+            android:id="@+id/da"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+          android:layout_below="@+id/scroll_date"
+          
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+           <LinearLayout
+            android:id="@+id/main_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical"
+            android:weightSum="6" >
+
+            <TextView
+                android:id="@+id/txt_mdl1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="2"
+                android:layout_marginBottom="5dp"
+                android:text="Primary Mobile No."
+                android:textSize="17sp" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+               android:background="#ebebeb"
+                android:orientation="horizontal"
+                android:weightSum="6" >
+
+            <TextView
+                 android:id="@+id/txt_mobno2"
+               
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4.9"
+                android:inputType="number"
+                android:hint=" "
+                android:textSize="16sp" />
+            
+            <ImageView
+                 android:id="@+id/ed_txt_mob2"
+               
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+    			android:paddingBottom="5dp"
+         		android:paddingTop="5dp"
+         	
+                android:layout_weight="1.1"
+                android:src="@drawable/pencil_icon"
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+           <RelativeLayout
+               android:id="@+id/mob_data2"
+                android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:layout_below="@+id/main_data"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+           
+               
+               <LinearLayout
+            android:id="@+id/main_data2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical"
+            android:weightSum="6" >
+
+            <TextView
+                android:id="@+id/txt_mdl2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="2"
+                android:layout_marginBottom="5dp"
+                android:text="Alternate Mobile No."
+                android:textSize="17sp" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+               android:background="#ebebeb"
+                android:orientation="horizontal"
+                android:weightSum="6" >
+
+            <TextView
+                 android:id="@+id/txt_mobno"
+               
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4.9"
+                android:inputType="number"
+                android:hint=" "
+                android:textSize="16sp" />
+            
+            <ImageView
+                android:id="@+id/ed_txt_mob"
+                 android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+    			android:paddingBottom="5dp"
+         		android:paddingTop="5dp"
+         	
+                android:layout_weight="1.1"
+                android:src="@drawable/pencil_icon" />
+                
+         <!--        <ImageView
+                    android:id="@+id/img_edit"
+                    android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+            
+           
+                android:layout_weight="1.1"
+                android:src="@drawable/Pencil_icon"
+                
+                   /> -->
+                
+            </LinearLayout>
+        </LinearLayout>
+               
+           </RelativeLayout>    
+               
+               
+               
+               
+               
+               
+               
+               
+        <RelativeLayout
+            android:id="@+id/data2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:layout_below="@+id/mob_data2"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+            android:id="@+id/main_data222"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical"
+            android:weightSum="6" >
+
+            <TextView
+                android:id="@+id/txt_mdl22"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="2"
+                android:layout_marginBottom="5dp"
+                android:text="Date of Birth"
+                android:textSize="17sp" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:background="#ebebeb"
+                android:orientation="horizontal"
+                android:weightSum="6" >
+
+            <TextView
+                android:id="@+id/ed_mbl22"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:padding="10dp"
+             
+                android:layout_weight="4.9"
+                android:inputType="number"
+                android:hint=" "
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/rd_text2"
+                  android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+    			android:paddingBottom="5dp"
+         		android:paddingTop="5dp"
+         	
+                android:layout_weight="1.1"
+                android:src="@drawable/pencil_icon"/>
+
+            </LinearLayout>
+            
+        </LinearLayout>
+
+
+
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/data3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           
+            android:layout_below="@+id/data2"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+           <LinearLayout
+            android:id="@+id/main_data3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical"
+            android:weightSum="6" >
+
+            <TextView
+                android:id="@+id/txt_mdl3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="2"
+                android:layout_marginBottom="5dp"
+                android:text="Email Id"
+                android:textSize="17sp" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:background="#ebebeb"
+                android:orientation="horizontal"
+                android:weightSum="6" >
+
+            <TextView
+                android:id="@+id/ed_mbl3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:padding="10dp"
+                android:layout_weight="4.9"
+                android:inputType="textEmailAddress"
+                android:hint=""
+                android:textSize="16sp" />
+            
+            <ImageView
+                android:id="@+id/rd_text3"
+               android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+    			android:paddingBottom="5dp"
+         		android:paddingTop="5dp"
+         	
+                android:layout_weight="1.1"
+                android:src="@drawable/pencil_icon"
+                />
+            </LinearLayout>
+            
+        </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/data4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+          
+            android:layout_below="@+id/data3"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+           <LinearLayout
+            android:id="@+id/main_data4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical"
+            android:weightSum="6" >
+
+            <TextView
+                android:id="@+id/txt_mdl4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="2"
+                android:layout_marginBottom="5dp"
+                android:text="Address"
+                android:textSize="17sp" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+               android:background="#ebebeb"
+                android:orientation="horizontal"
+                android:weightSum="6" >
+
+            <TextView
+                android:id="@+id/ed_mbl4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4.9"
+               android:inputType="textPostalAddress"
+                android:hint=""
+                android:textSize="16sp" />
+            
+            <ImageView
+                android:id="@+id/rd_text14"
+                    android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+    			android:paddingBottom="5dp"
+         		android:paddingTop="5dp"
+         	
+                android:layout_weight="1.1"
+                android:src="@drawable/pencil_icon"
+                />
+            </LinearLayout>
+            
+        </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+</RelativeLayout>

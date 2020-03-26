@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="btn_pressed">#7CFC00</color>
+     <color name="btn_released">#C0C0C0</color>
+     <color name="label_gray_color">#000000</color>
+     <color name="label_background">#C0C0C0</color>
+     <color name="label_black_color">#000000</color>
+     <color name="label_blue_color">#0000FF</color>
+     <color name="label_red_color">#FF0000</color>
+     <color name="label_white_color">#FFFFFF</color>
+     <color name="label_orange_color">#FFA500</color>
+     <color name="label_LightSeaGreen_color">#20B2AA</color>
+     <color name="label_grayblack">#666666</color>
+     <color name="label_text">#333333</color>
+     <color name="label_paymenthistory">#ef852f</color>
+     <color name="label_datausage">#2d2e98</color>
+     <color name="label_servicerequest">#01b8b6</color>
+     <color name="btnrenewal">#2d87ef</color>
+     <color name="header">#a5dfd6</color>
+     <color name="label_upgrade">#bbbac0</color>
+     <color name="label_headerbtn">#ff9500</color>
+ 	 <color name="gradient_start">#ff9c00</color>
+ 	 <color name="gradient_end">#ff8000</color>
+ 	 <color name="titleheader">#EDD347</color>
+ 	 <color name="header_start">#FFDF33</color>
+ 	 <color name="header_end">#FFF8D1</color>
+ 	 <color name="btn_color">#B3B3B3</color>
+ 	 <color name="menu_payment">#FFC966</color>
+ 	 <color name="label_font_color">#000000</color>
+ 	 <color name="circular_progress_default_progress">#bada55</color>
+	<color name="circular_progress_default_background">#787878</color>
+	<color name="circular_progress_default_title">#bada55</color>
+	<color name="circular_progress_default_subtitle">#D1D1D1</color>
+	<color name="bg_myapp_common">#ebebeb</color>
+	<color name ="bg_ionhome">#D8D8D8</color>
+	<color name ="color_red">#FF0000</color>
+	<color name ="color_green">#008000</color>
+	
+	<color name="holo_blue">#FF33E5B5</color>
+	
+	 <color name="kesari_color">#fa6501</color>
+    <color name="button_profile">#ac5624</color>
+    <color name="blue_color">#013ADF</color>
+    <color name="black_color">#000000</color>
+    <color name="grey_color">#e4e8e9</color>
+     <color name="dark_grey_color">#4D4D4D</color>
+   
+    <color name="self_blue">#2186BB</color>
+    <color name="self_orange">#DE6703</color>
+    <color name="self_green">#2EA00f</color>
+    <color name="self_purple">#761C97</color>
+    <color name="self_red">#DB191D</color>
+    <color name="green">#33FF33</color>
+    <color name="plan_calci">#dc7e00</color>
+    
+     <color name="default_background_color">@android:color/transparent</color>
+    <color name="default_progress_color">#33b5e5</color>
+    <color name="default_stroke_color">#33b5e5</color>
+    <color name="default_text_color">#333333</color>
+    
+     <!-- A light Holo shade of blue -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <!-- A light Holo shade of green -->
+    <color name="holo_green_light">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="holo_red_light">#ffff4444</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <!-- A dark Holo shade of green -->
+    <color name="holo_green_dark">#ff669900</color>
+    <!-- A dark Holo shade of red -->
+    <color name="holo_red_dark">#ffcc0000</color>
+    <!-- A Holo shade of purple -->
+    <color name="holo_purple">#ffaa66cc</color>
+    <!-- A light Holo shade of orange -->
+    <color name="holo_orange_light">#ffffbb33</color>
+    <!-- A dark Holo shade of orange -->
+    <color name="holo_orange_dark">#ffff8800</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+    
+    <color name="calc_color">#dc7e00</color>
+    <color name="help_renew">#118508</color>
+    <color name="help_upgrade">#bf3d3d</color>
+    <color name="help_pay_pickup">#974578</color>
+    <color name="help_service_req">#f76426</color>
+    <color name="help_renew_his">#837ab8</color>
+    <color name="help_calc">#337df4</color>
+    <color name="help_topup">#44d638</color>
+    <color name="help_self">#009700</color>
+    <color name="help_data">#f24f0b</color>
+    <color name="help_faq">#b50907</color>
+    <color name="help_alerts">#ffcc00</color>
+     <color name="help_chat">#e00071</color>
+     <color name="normal_grey">#dadada</color>
+     <color name="pay_ccavenue">#1abc9c</color>
+
+    <color name="pkg1">#d3d691</color>
+    <color name="pkg2">#9fcea5</color>
+    <color name="pkg3">#DAB5DA</color>
+    <color name="pkg4">#F2B1CA</color>
+    <color name="pkg5">#F18C92</color>
+
+    <color name="pkg6">#8991ea</color>
+
+
+</resources>

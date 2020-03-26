@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <clip>
+            <shape>
+                <gradient
+                    android:startColor="@android:color/transparent"
+                    android:centerColor="@android:color/transparent"
+                    android:centerY="0.1"
+                    android:endColor="@android:color/transparent"
+                    android:angle="270"
+                />
+            </shape>
+        </clip>
+    </item>
+    <item>
+        <clip>
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/seekbar_1"
+            android:tileMode="repeat"
+            android:antialias="true"
+            android:dither="false"
+            android:filter="false"
+            android:gravity="left"
+        />
+        </clip>
+    </item>
+</layer-list>
